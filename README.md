@@ -14,14 +14,6 @@ This repo hosts a C++ and python implementation of the [YOLOv11](https://github.
 <p align="center" margin: 0 auto;>
 </p>
 
-
-## Prerequisites
-
-- **CUDA**: Version 11.6 or later
-- **TensorRT**: Version 8.6 or later
-- **Python**: Version 3.10.12 or later
-- **CMake**: Required for building the C++ implementation
-
 ## Installation
 
 1. Clone the repository:
