@@ -9,57 +9,72 @@ TensorRT-YOLOv11
 [![mit](https://img.shields.io/badge/license-MIT-blue)](https://github.com/spacewalk01/TensorRT-YOLOv9/tree/main?tab=MIT-1-ov-file#readme)
 
 <div align="left">
- 
-This repo hosts a C++ and python implementation of the [YOLOv11](https://github.com/ultralytics/ultralytics) state of the art object detection model, leveraging the TensorRT API for efficient real-time inference.
-<p align="center" margin: 0 auto;>
-</p>
+ Here is an improved version of your README for GitHub. It has clearer structure, more detailed explanations, and consistent formatting:
+
+---
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/spacewalk01/yolov11-tensorrt.git
-   cd yolov11-tensorrt
-   ```
+### 1. Clone the Repository
 
-2. Install dependencies:
-   - For Python:
-     ```bash
-     pip install --upgrade ultralytics
-     ```
-   - For C++: Set OpenCV and TensorRT paths in the `CMakeLists.txt` file.
+```bash
+git clone https://github.com/spacewalk01/yolov11-tensorrt.git
+cd yolov11-tensorrt
+```
 
-3. Compile the C++ code:
-   ```bash
-   mkdir build && cd build
-   cmake ..
-   cmake --build . --config Release
-   ```
+### 2. Install Dependencies
+
+- **For Python**:
+  Install required Python dependencies using pip:
+  
+  ```bash
+  pip install --upgrade ultralytics
+  ```
+
+- **For C++**:
+  Ensure that OpenCV and TensorRT are installed. Set the correct paths for these libraries in the `CMakeLists.txt` file.
+
+### 3. Build the C++ Code
+
+```bash
+mkdir build && cd build
+cmake ..
+cmake --build . --config Release
+```
 
 ## Usage
 
-### Python
+### Exporting the Model
 
-    1. Set desired model name in export.py 
-    2. Run the Python inference script to export the model into onnx:
+1. Modify the `export.py` script if needed to set the desired model name.
+2. Run the Python script to export the YOLOv11 model to ONNX format:
 
-    ```bash
-    python export.py
-    ```
+   ```bash
+   python export.py
+   ```
 
-### C++
+### Running Inference
 
-Create an engine from the onnx model:
+#### 1. Create a TensorRT Engine
+
+Convert the ONNX model to a TensorRT engine:
+
 ```bash
-./yolov11-tensorrt.exe yolov11.onnx ""
+./yolov11-tensorrt.exe yolov11.onnx
 ```
 
-Run an inference on the image:
+#### 2. Run Inference on an Image
+
+Perform object detection on an image:
+
 ```bash
 ./yolov11-tensorrt.exe yolov11.engine "zidane.jpg"
 ```
 
-Run an inference on the video:
+#### 3. Run Inference on a Video
+
+Perform object detection on a video:
+
 ```bash
 ./yolov11-tensorrt.exe yolov11.engine "road.mp4"
 ```
