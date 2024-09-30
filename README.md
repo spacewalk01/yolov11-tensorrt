@@ -13,7 +13,7 @@ TensorRT-YOLOv11
   <img src="output.gif" />
 </p>
  
-This repository hosts a C++ and Python implementation of the state-of-the-art YOLOv11 object detection model, leveraging the TensorRT API for efficient, real-time inference.
+This repository hosts a C++ implementation of the state-of-the-art YOLOv11 object detection model, leveraging the TensorRT API for efficient, real-time inference.
 
 
 ## Installation
