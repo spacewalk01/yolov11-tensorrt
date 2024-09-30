@@ -63,7 +63,7 @@ cmake --build . --config Release
 Convert the ONNX model to a TensorRT engine:
 
 ```bash
-./yolov11-tensorrt.exe yolo11s.onnx
+./yolov11-tensorrt.exe yolo11s.onnx ""
 ```
 
 #### 2. Run Inference on an Image
