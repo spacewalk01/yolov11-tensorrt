@@ -9,11 +9,12 @@ TensorRT-YOLOv11
 [![mit](https://img.shields.io/badge/license-MIT-blue)](https://github.com/spacewalk01/TensorRT-YOLOv9/tree/main?tab=MIT-1-ov-file#readme)
 
 <div align="left">
- Here is an improved version of your README for GitHub. It has clearer structure, more detailed explanations, and consistent formatting:
 <p align="center">
   <img src="result.gif" />
 </p>
----
+ 
+This repository hosts a C++ and Python implementation of the state-of-the-art YOLOv11 object detection model, leveraging the TensorRT API for efficient, real-time inference.
+
 
 ## Installation
 
