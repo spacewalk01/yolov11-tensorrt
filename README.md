@@ -11,7 +11,7 @@ TensorRT-YOLOv11
 <div align="left">
  Here is an improved version of your README for GitHub. It has clearer structure, more detailed explanations, and consistent formatting:
 <p align="center">
-  <img src="assets/result.gif" />
+  <img src="result.gif" />
 </p>
 ---
 
