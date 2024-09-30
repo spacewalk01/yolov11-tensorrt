@@ -63,7 +63,7 @@ cmake --build . --config Release
 Convert the ONNX model to a TensorRT engine:
 
 ```bash
-./yolov11-tensorrt.exe yolo11.onnx
+./yolov11-tensorrt.exe yolo11s.onnx
 ```
 
 #### 2. Run Inference on an Image
@@ -71,7 +71,7 @@ Convert the ONNX model to a TensorRT engine:
 Perform object detection on an image:
 
 ```bash
-./yolov11-tensorrt.exe yolo11.engine "zidane.jpg"
+./yolov11-tensorrt.exe yolo11s.engine "zidane.jpg"
 ```
 
 #### 3. Run Inference on a Video
@@ -79,7 +79,7 @@ Perform object detection on an image:
 Perform object detection on a video:
 
 ```bash
-./yolov11-tensorrt.exe yolo11.engine "road.mp4"
+./yolov11-tensorrt.exe yolo11s.engine "road.mp4"
 ```
 
 ## License
