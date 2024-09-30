@@ -33,11 +33,11 @@ This repo hosts a C++ and python implementation of the [YOLOv11](https://github.
 2. Install dependencies:
    - For Python:
      ```bash
-     pip install -r requirements.txt
+     pip install --upgrade ultralytics
      ```
    - For C++: Set OpenCV and TensorRT paths in the `CMakeLists.txt` file.
 
-3. Compile the C++ code (optional):
+3. Compile the C++ code:
    ```bash
    mkdir build && cd build
    cmake ..
