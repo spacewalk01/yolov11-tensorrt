@@ -13,3 +13,65 @@ TensorRT-YOLOv11
 This repo hosts a C++ and python implementation of the [YOLOv11](https://github.com/ultralytics/ultralytics) state of the art object detection model, leveraging the TensorRT API for efficient real-time inference.
 <p align="center" margin: 0 auto;>
 </p>
+
+
+## Prerequisites
+
+- **CUDA**: Version 11.6 or later
+- **TensorRT**: Version 8.6 or later
+- **Python**: Version 3.10.12 or later
+- **CMake**: Required for building the C++ implementation
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/spacewalk01/yolov11-tensorrt.git
+   cd yolov11-tensorrt
+   ```
+
+2. Install dependencies:
+   - For Python:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - For C++: Set OpenCV and TensorRT paths in the `CMakeLists.txt` file.
+
+3. Compile the C++ code (optional):
+   ```bash
+   mkdir build && cd build
+   cmake ..
+   cmake --build . --config Release
+   ```
+
+## Usage
+
+### Python
+
+    1. Set desired model name in export.py 
+    2. Run the Python inference script to export the model into onnx:
+
+    ```bash
+    python export.py
+    ```
+
+### C++
+
+Create an engine from the onnx model:
+```bash
+./yolov11-tensorrt.exe yolov11.onnx ""
+```
+
+Run an inference on the image:
+```bash
+./yolov11-tensorrt.exe yolov11.engine "zidane.jpg"
+```
+
+Run an inference on the video:
+```bash
+./yolov11-tensorrt.exe yolov11.engine "road.mp4"
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
